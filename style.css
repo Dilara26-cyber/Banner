@@ -35,7 +35,7 @@ a {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .popup-cta {
-  margin-bottom: 3.5em;
+  margin-bottom: 3em;
   border: none;
   width: 125px;
   height: 28px;
@@ -96,11 +96,6 @@ a {
   flex-direction: column;
   gap: 0.5em;
 }*/
-@media (max-height: 568px) {
-  .popup-cta {
-    margin-bottom: 2.5em;
-  }
-}
 
 /*@media (min-width: 720px) {
   .banner {
