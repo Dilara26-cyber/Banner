@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300&family=Satisfy&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Roboto', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 635px;
+  border-radius: 20px;
+  height: 354px;
+  background: rgba(255, 255, 255);
+  background-image: url('./image/banner_trial_two.png');
+  background-repeat: no-repeat;
+  letter-spacing: 1px;
+  background-size: cover;
+  color: #113e66;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.popup-cta {
+  margin-bottom: 3.5em;
+  border: none;
+  width: 125px;
+  height: 28px;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  background-color: #309dff;
+  transition: all 0.3s ease-in;
+}
+.popup-cta:hover {
+  background-color: #113e66;
+}
+.popup-cta a {
+  color: #fff;
+  font-weight: 700;
+}
+.fa-times-circle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  color: #309dff;
+}
+.details {
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+  bottom: 16px;
+  font-size: 0.9rem;
+}
+.details a {
+  color: #309dff;
+  font-weight: 700;
+}
+.popup-closed {
+  transition: opacity 0.3s ease-in;
+  opacity: 0;
+  pointer-events: none;
+}
+.overlay {
+  position: absolute;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/*.banner {
+  background-color: #309dff;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 0.5em;
+}*/
+@media (max-height: 568px) {
+  .popup-cta {
+    margin-bottom: 2.5em;
+  }
+}
+
+/*@media (min-width: 720px) {
+  .banner {
+    flex-direction: row;
+    padding: 1em 5em;
+  }
+}*/
